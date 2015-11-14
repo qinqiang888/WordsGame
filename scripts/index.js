@@ -40,7 +40,7 @@ window.onload=function(){
 		      clearInterval(t);
 	}
 		if(!hasjishuqi){
-		var t=setInterval(function(){
+		 t=setInterval(function(){
 			item1.innerHTML='00:'+aa;
 			aa++;
 			
