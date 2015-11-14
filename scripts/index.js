@@ -1,6 +1,6 @@
 window.onload=function(){
 	var el=document.getElementById('test');
-	for(var i=0;i<5;i++){
+	for(var i=0;i<56;i++){
 		var els=document.createElement('div');
 		els.setAttribute('class','item');
 		// els.setAttribute('id','_'+i);
