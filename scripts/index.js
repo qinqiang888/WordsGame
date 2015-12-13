@@ -31,7 +31,7 @@ window.onload=function(){
 			if(String.fromCharCode(e.keyCode+32)==item[i].innerHTML&&e.shiftKey==false||
 			String.fromCharCode(e.keyCode)==item[i].innerHTML&&e.shiftKey==true){
 			item[i].style.backgroundColor='#fff';
-			item[i].style.color='#fff';
+			item[i].style.color='#000';
 			i++;
 			
 
