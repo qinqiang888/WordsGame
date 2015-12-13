@@ -1,13 +1,13 @@
 window.onload=function(){
 	var el=document.getElementById('test');
-	for(var i=0;i<56;i++){
+	for(var i=0;i<52;i++){
 		var els=document.createElement('div');
 		els.setAttribute('class','item');
 		// els.setAttribute('id','_'+i);
-		var r=Math.floor(Math.random()*256);
-		var b=Math.floor(Math.random()*256);
-		var g=Math.floor(Math.random()*256);
-	 	els.style.backgroundColor='rgb('+r+','+b+','+g+')';
+		// var r=Math.floor(Math.random()*256);
+		// var b=Math.floor(Math.random()*256);
+		// var g=Math.floor(Math.random()*256);
+	 //	els.style.backgroundColor='rgb('+r+','+b+','+g+')';
 	 	if(Math.random()>0.5){
 	 		els.innerHTML=String.fromCharCode(Math.floor(Math.random()*26+65));
 	 	}
@@ -30,7 +30,8 @@ window.onload=function(){
 		document.onkeydown=function(e){
 			if(String.fromCharCode(e.keyCode+32)==item[i].innerHTML&&e.shiftKey==false||
 			String.fromCharCode(e.keyCode)==item[i].innerHTML&&e.shiftKey==true){
-			item[i].style.backgroundColor='white';
+			item[i].style.backgroundColor='#fff';
+			item[i].style.color='#fff';
 			i++;
 			
 
